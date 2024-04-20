@@ -1,5 +1,5 @@
 import pytest
-from main import function
+from ..main.main import function
 
 
 @pytest.mark.parametrize('a, b, c, r', [(1, 0, 1, []),
@@ -18,6 +18,6 @@ def test_2(a, b, c, r):
         function(a, b, c)
 
 
-if __name__() == '__main__':
+if __name__ == '__main__':
     test_1()
     test_2()

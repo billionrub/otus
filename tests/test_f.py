@@ -16,3 +16,8 @@ def test_1(a, b, c, r):
 def test_2(a, b, c, r):
     with pytest.raises(r):
         function(a, b, c)
+
+
+if __name__() == '__main__':
+    test_1()
+    test_2()
